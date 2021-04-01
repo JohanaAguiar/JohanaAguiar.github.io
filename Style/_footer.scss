@@ -1,0 +1,27 @@
+footer {
+    height: 121px;
+    font-family: $secundary-font, monospace;
+    display: grid;
+    grid-template-rows: 22px 28px;
+    grid-row-gap: 16px;
+    justify-items: center;
+    padding-top: 24px;
+
+    p .copy {
+        grid-row: 1;
+        line-height: 22px;
+    }
+
+    div {
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 16px 14px 16px 16px 16px;
+        grid-column-gap: 38px;
+
+        i {
+            font-size: 16px;
+            color: $color-text;
+        }
+        
+    }
+}

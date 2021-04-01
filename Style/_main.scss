@@ -1,0 +1,188 @@
+main {
+
+    .greeting {
+        margin: 24px 16px;
+        padding-top: 73px;
+
+        h1 {
+            line-height: 42px;
+            font-size: 36px;
+            margin-top: 5px;
+            width: 240px;
+
+            .tachado {
+                text-decoration: line-through;
+                }
+        }
+
+        p{
+            margin-top: 16px;
+        }
+
+        .Button {
+            margin-bottom: 24px;
+        }
+    }
+
+    .episodes {
+
+        margin-bottom: -106.5px;
+        
+        h2 {
+            color: white;
+        }
+        .skew {
+            background: linear-gradient(225deg, $primary-gradiente 0%, $secundary-gradient);
+            transform: skew(0, -5deg);
+            transform-origin: top left;
+            position: relative;
+            top: 0;
+            z-index: -1;
+
+            .container-podcast {
+                position: relative;
+                padding: 11px;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                row-gap: 11px;
+                padding-bottom: 143.5px;
+    
+                iframe {
+                    width: 100%;
+                    min-height: 232px;
+                    border: 0;
+                }
+    
+                .podcast1{
+                    grid-row: 1;
+                }
+    
+                .podcast2{
+                    grid-row: 2;
+                }
+    
+                .podcast3{
+                    grid-row: 3;
+                }
+    
+                .podcast4{
+                    grid-row: 4;
+                }
+            }
+        }
+    }
+
+    .information {
+        z-index: 1;
+        margin: 0px 16px;
+
+        img {
+            width: 100%;
+        }
+        
+        p{
+            margin-top: 8px;
+        }
+    }
+
+    .guests {
+        margin-top: 54px;
+
+        .container-guests {
+            margin-top: 14px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            img {
+                width: 100%;
+
+                .guests1{
+                    grid-row: 1;
+                }
+
+                .guests2{
+                    grid-row: 2;
+                }
+
+                .guests3{
+                    grid-row: 3;
+                }
+
+                .guests4{
+                    grid-row: 4;
+                }
+                .guests5{
+                    grid-row: 5;
+                }
+                .guests6{
+                    grid-row: 6;
+                }
+            }
+        }
+    }
+
+    .subject {
+        margin: 48px 16px 42px 16px;
+
+        h2 {
+            margin-bottom: 37px;
+        }
+
+        img {
+            margin: 13px calc((100% - 104px)*0.5);
+            height: 104px;
+        }
+
+        h4 {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 52px;
+        }
+    }
+
+    .news {
+        padding-bottom: 31px;
+        overflow: hidden;
+        height: 341px;
+
+        .skew {
+            background: linear-gradient(225deg, $primary-gradiente, $secundary-gradient);
+            transform: skewy(-5deg);
+            transform-origin: bottom right;
+            height: 361px;
+        
+            h2 {
+                color: white;
+                text-align: center;
+                margin: 0 16px;
+            }
+        }
+    }
+    
+    section {
+        .Button {
+            font-family: $secundary-font, monospace;
+            font-weight: 500;
+            width: 288px;
+            margin-top: 36px;
+            margin-left: calc((100% - 288px)/2);
+            height: 48px;
+            font-size: 16px;
+            line-height: 22px;
+            background: #00F3BB;
+            
+
+            &:hover {
+                background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+                color: white;
+            }
+        }
+
+        .no-skew {
+            transform: skew(0, 5deg);
+            padding: 64px 16px 0px 16px;
+        }
+    }
+}

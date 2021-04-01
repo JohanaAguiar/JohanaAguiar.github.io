@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+body {
+    font-family: $primary-font, sans-serif;
+    color: $color-text;
+    background-color: white;
+
+    h2 {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 100;
+    }
+    p {
+        font-size: 14px;
+        font-family: $secundary-font, monospace;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+}
